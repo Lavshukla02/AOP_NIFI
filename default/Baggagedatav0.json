@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1771324450307,
+    "description" : "Baggage_data_v0",
+    "identifier" : "Baggagedatav0",
+    "lastModifiedTimestamp" : 1771324450307,
+    "name" : "Baggage_data_v0",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
