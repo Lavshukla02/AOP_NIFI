@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1771324687501,
+    "description" : "flight_data_v0",
+    "identifier" : "flightdatav0",
+    "lastModifiedTimestamp" : 1771324687501,
+    "name" : "flight_data_v0",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
