@@ -673,7 +673,7 @@
     "inputPorts" : [ ],
     "labels" : [ ],
     "maxConcurrentTasks" : 1,
-    "name" : "flight_streaming",
+    "name" : "flight_streaming_v0",
     "outputPorts" : [ ],
     "position" : {
       "x" : 0.0,
@@ -2859,7 +2859,7 @@
       "retryCount" : 10,
       "runDurationMillis" : 25,
       "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
+      "schedulingPeriod" : "10 sec",
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "org.apache.nifi.processors.standard.LogAttribute",
@@ -3311,6 +3311,6 @@
   "snapshotMetadata" : {
     "author" : "aopadmin@dev-aop.wdplatform.com",
     "flowIdentifier" : "Flightstreamingv0",
-    "timestamp" : 1771321422134
+    "timestamp" : 1771324780191
   }
 }
