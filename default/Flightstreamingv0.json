@@ -1033,7 +1033,7 @@
         "y" : -960.0
       },
       "properties" : {
-        "Replacement Value" : "{\n\n  \"query\": \"query MyQuery($limit: Int!, $last_value: bigint!) { flight_events(limit: $limit,  where: {flight_event_id: {_gt: $last_value}}, order_by: {flight_event_id: asc}) { airport_iata atc_slot_ts delay_code delay_minutes event_ts event_type flight_event_id flight_id terminal source_system runway recorded_ts recorded_by gate } flight_events_aggregate(where: {flight_event_id: {_gt: $last_value}}, limit: $limit) { aggregate { max { flight_event_id } } } }\",\n\n  \"variables\": {\n\n    \"limit\": 75000,\n\n    \"last_value\": ${last_value}\n  }\n\n}",
+        "Replacement Value" : "{\n\n  \"query\": \"query MyQuery($limit: Int!, $last_value: bigint!) { flight_events(limit: $limit,  where: {flight_event_id: {_gt: $last_value}}, order_by: {flight_event_id: asc}) { airport_iata atc_slot_ts delay_code delay_minutes event_ts event_type flight_event_id flight_id terminal source_system runway recorded_ts recorded_by gate } flight_events_aggregate(where: {flight_event_id: {_gt: $last_value}}, limit: $limit) { aggregate { max { flight_event_id } } } }\",\n\n  \"variables\": {\n\n    \"limit\": 30000,\n\n    \"last_value\": ${last_value}\n  }\n\n}",
         "Search Value" : "(?s)(^.*$)",
         "Evaluation Mode" : "Entire text",
         "Line-by-Line Evaluation Mode" : "All",
@@ -1602,7 +1602,7 @@
       },
       "properties" : {
         "Destination" : "flowfile-attribute",
-        "flight_event_id" : "$.data.flight_events.flight_events_aggregate.aggregate.max.flight_event_id",
+        "flight_event_id" : "$.data.flight_events_aggregate.aggregate.max.flight_event_id",
         "Max String Length" : "100 MB",
         "Return Type" : "scalar",
         "Null Value Representation" : "empty string",
@@ -2341,7 +2341,7 @@
         "y" : -1112.0
       },
       "properties" : {
-        "Replacement Value" : "${flight_event_id}",
+        "Replacement Value" : "${max_flight_event_id}",
         "Search Value" : "(?s)(^.*$)",
         "Evaluation Mode" : "Entire text",
         "Line-by-Line Evaluation Mode" : "All",
@@ -3311,6 +3311,6 @@
   "snapshotMetadata" : {
     "author" : "aopadmin@dev-aop.wdplatform.com",
     "flowIdentifier" : "Flightstreamingv0",
-    "timestamp" : 1771324780191
+    "timestamp" : 1771418171573
   }
 }
