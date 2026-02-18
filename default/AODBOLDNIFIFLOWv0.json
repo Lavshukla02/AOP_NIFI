@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1771399769722,
+    "description" : "AODB_OLD_NIFI_FLOW_v0",
+    "identifier" : "AODBOLDNIFIFLOWv0",
+    "lastModifiedTimestamp" : 1771399769722,
+    "name" : "AODB_OLD_NIFI_FLOW_v0",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
