@@ -467,7 +467,7 @@
         "y" : -56.0
       },
       "properties" : {
-        "Object Key" : "inbound-folder/batch_sythetic_data/Ticket_data/tickets_002.json",
+        "Object Key" : "inbound-folder/batch_sythetic_data/Ticket_data/tickets_500mb_001.json",
         "Bucket" : "aop-s3-bucket-dev",
         "AWS Credentials Provider Service" : "e6f6f928-cfb8-3c13-a9e9-8d04921eed4f",
         "Communications Timeout" : "30 secs",
@@ -1028,6 +1028,6 @@
   "snapshotMetadata" : {
     "author" : "aopadmin@dev-aop.wdplatform.com",
     "flowIdentifier" : "ticketdatav00",
-    "timestamp" : 1771324921197
+    "timestamp" : 1771418185684
   }
 }
